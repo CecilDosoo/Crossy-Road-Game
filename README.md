@@ -2,6 +2,11 @@
 
 - I developed a Python program that simulates the Crossy Road game using the Turtle module. The game is structured across multiple Python files, each handling different aspects of the game. The Player class manages the player’s character, allowing it to move across the screen. The CarManager class controls the creation and movement of cars, providing the main obstacles for the player to avoid. Finally, the Scoreboard class tracks the player’s progress, displaying the current level and signaling when the game is over. Together, these components create a cohesive and interactive game experience.
 
+- ![image](https://github.com/user-attachments/assets/a48c6389-3d43-4e50-bf2f-9f3807ca6346)
+- ![image](https://github.com/user-attachments/assets/87300a3c-6d9c-45f3-b9b8-46e28e210415)
+- ![image](https://github.com/user-attachments/assets/0f5bf13f-7ae1-4d2a-a8d9-1e1a18efc795)
+
+
 # CAR_MANAGER
 
 - The CarManager class is designed to handle the creation and movement of cars in a game. It maintains a list of car objects, which are generated and managed by the class.
