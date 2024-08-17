@@ -1,39 +1,49 @@
-# Crossy-Road-Game
+# Crossy Road Game
 
-- I developed a Python program that simulates the Crossy Road game using the Turtle module. The game is structured across multiple Python files, each handling different aspects of the game. The Player class manages the player’s character, allowing it to move across the screen. The CarManager class controls the creation and movement of cars, providing the main obstacles for the player to avoid. Finally, the Scoreboard class tracks the player’s progress, displaying the current level and signaling when the game is over. Together, these components create a cohesive and interactive game experience.
+This project is a Python program that simulates the Crossy Road game using the Turtle module. The game is structured across multiple Python files, each handling different aspects of the game. The game includes classes for managing the player, obstacles (cars), and the scoreboard, creating a cohesive and interactive game experience.
 
-- ![image](https://github.com/user-attachments/assets/a48c6389-3d43-4e50-bf2f-9f3807ca6346)
-- ![image](https://github.com/user-attachments/assets/87300a3c-6d9c-45f3-b9b8-46e28e210415)
-- ![image](https://github.com/user-attachments/assets/0f5bf13f-7ae1-4d2a-a8d9-1e1a18efc795)
+## Game Overview
 
+The game involves a player navigating a character across the screen while avoiding moving cars. The player's progress is tracked, and the game features levels that increase in difficulty over time.
 
-# CAR_MANAGER
+## Screenshots
 
-- The CarManager class is designed to handle the creation and movement of cars in a game. It maintains a list of car objects, which are generated and managed by the class.
+![Game Screenshot 1](https://github.com/user-attachments/assets/a48c6389-3d43-4e50-bf2f-9f3807ca6346)
+![Game Screenshot 2](https://github.com/user-attachments/assets/87300a3c-6d9c-45f3-b9b8-46e28e210415)
+![Game Screenshot 3](https://github.com/user-attachments/assets/0f5bf13f-7ae1-4d2a-a8d9-1e1a18efc795)
 
-- The create_cars() function creates cars randomly, with a 1 in 6 chance of being added to the screen. Each car is initialized as a rectangular shape, with a random color chosen from a predefined set, and is positioned at a random y-coordinate along the right edge of the screen.
+## Components
 
-- The move() method is responsible for moving all the cars from right to left across the screen. It simulates the cars driving across the screen at a constant speed.
+### CarManager
 
-- The move_faster() method that increases the speed of all the cars, making them move faster by adding an increment to their movement distance. This allows for dynamic gameplay, where the speed of the cars can increase over time or in response to certain game conditions.
+The `CarManager` class handles the creation and movement of cars, which are the primary obstacles in the game.
 
-# PLAYER 
+- **`create_cars()`**: Randomly generates cars with a 1 in 6 chance of appearing. Each car is a rectangular shape with a random color and is positioned at a random y-coordinate along the right edge of the screen.
+  
+- **`move()`**: Moves all cars from right to left across the screen at a constant speed.
+  
+- **`move_faster()`**: Increases the speed of all cars, making them move faster by adding an increment to their movement distance. This enables dynamic gameplay with increasing difficulty.
 
-- The Player class models the player character in a game, specifically a turtle that the player controls. It inherits from the Turtle class and is initialized with a turtle shape, white color, and a starting position at the bottom center of the screen. The turtle is also oriented to face upwards, ready to move towards the top.
+### Player
 
-- The move() method allows the player to move the turtle forward by a fixed distance, simulating the player advancing towards the finish line.
+The `Player` class represents the player’s character in the game.
 
-- The reset_position() method is used to send the turtle back to its starting position, typically after reaching the finish line.
+- **Initialization**: The player character is a turtle with a specific shape, white color, and starting position at the bottom center of the screen. It is oriented to face upwards, simulating movement towards the top of the screen.
+  
+- **`move()`**: Moves the turtle forward by a fixed distance, simulating progress towards the finish line.
+  
+- **`reset_position()`**: Resets the turtle to its starting position, typically after reaching the finish line.
 
-# SCOREBOARD
+### Scoreboard
 
-- The Scoreboard class manages the display of the player's level and the game-over message in a game. Inheriting from the Turtle class, it is initialized with a hidden turtle cursor and is positioned at the top left of the screen. The scoreboard starts by displaying the initial level, set to 1, using a predefined font.
+The `Scoreboard` class manages the display of the player's level and game-over message.
 
-- The level_increase() method is responsible for updating the level on the screen. Each time it is called, it clears the previous level display, increments the level by one, and writes the new level on the screen.
+- **Initialization**: The scoreboard is a hidden turtle positioned at the top left of the screen. It starts by displaying the initial level, set to 1, using a predefined font.
+  
+- **`level_increase()`**: Updates the level on the screen by clearing the previous level display, incrementing the level, and writing the new level.
+  
+- **`game_over()`**: Displays a "GAME OVER" message at the center of the screen when the game ends, signaling the player that the game is over.
 
-- The game_over() method is used to display a "GAME OVER" message at the center of the screen when the game ends, signaling to the player that the game is over.
+## How to Run
 
-
-
-
-
+To run the game, make sure you have Python installed on your system. Execute the main Python script that initializes the game and starts the Turtle graphics window.
