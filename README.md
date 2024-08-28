@@ -8,6 +8,8 @@ The game involves a player navigating a character across the screen while avoidi
 
 ## Screenshots
 
+https://github.com/user-attachments/assets/aeedee0d-2ac6-4f7e-bb4d-5094fd91c60b
+
 ![Game Screenshot 1](https://github.com/user-attachments/assets/a48c6389-3d43-4e50-bf2f-9f3807ca6346)
 ![Game Screenshot 2](https://github.com/user-attachments/assets/87300a3c-6d9c-45f3-b9b8-46e28e210415)
 ![Game Screenshot 3](https://github.com/user-attachments/assets/0f5bf13f-7ae1-4d2a-a8d9-1e1a18efc795)
